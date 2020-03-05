@@ -1,0 +1,36 @@
+@font-face {
+  font-family: hind;
+  src: url('fonts/HindSiliguri-Regular.ttf');
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Hind Siliguri';
+}
+.fixed-background{
+  background-image: url('images/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.bg-light{
+  background-color: transparent!important;
+}
+.navbar-brand{
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.nav-logo{
+  width: 170px;
+}
+.navbar-nav{
+  margin-right: 4%;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0.7rem;
+  padding-left: .7rem;
+  font-size: 1.3em;
+  font-weight: 600;
+}
