@@ -8,9 +8,11 @@ body{
   font-family: 'Hind Siliguri';
 }
 .fixed-background{
-  background-image: url('images/background.png');
+  /* background: rgb(255,150,145); */
+  background: url('images/background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
+  /* background-image: url('images/background.png'); */
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
