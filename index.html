@@ -16,12 +16,32 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      $('.slider-aboutus').slick({
+        dots:false,
+        arrows:true,
+        nextArrow:'<img src="images/next.png" class="arrow_next">',
+        prevArrow:'<img src="images/prev.png" class="arrow_prev">',
+        infinite: true,
+        //autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 900,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+
+    });
+    </script>
+
   </head>
   <body>
     <div class="fixed-background container-fluid">
 
       <header>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,6 +61,47 @@
           </div>
         </nav>
       </header>
+
+      <main>
+
+        <section class="aboutus">
+
+            <div class="slider-aboutus row d-flex align-items-center">
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we are a digital social impact agency.</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we design and develop your webpresence.</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we support and mentor female pakistani devs.</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+          </div>
+
+        </section>
+      </main>
 
     </div>
 

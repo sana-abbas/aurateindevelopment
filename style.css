@@ -8,11 +8,9 @@ body{
   font-family: 'Hind Siliguri';
 }
 .fixed-background{
-  /* background: rgb(255,150,145); */
   background: url('images/background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
-  /* background-image: url('images/background.png'); */
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100vh;
@@ -21,11 +19,11 @@ body{
   background-color: transparent!important;
 }
 .navbar-brand{
-  padding-left: 4%;
+  padding-left: 7%;
   padding-top: 2%;
 }
 .nav-logo{
-  width: 170px;
+  width: 200px;
 }
 .navbar-nav{
   margin-right: 4%;
@@ -35,4 +33,65 @@ body{
   padding-left: .7rem;
   font-size: 1.3em;
   font-weight: 600;
+}
+.slider-aboutus{
+  height: 75vh;
+  padding-left: 4%;
+  padding-right: 75%;
+}
+.slide{
+  height: 50vh;
+  text-align: center;
+}
+.text-slider{
+  line-height: 1.4;
+}
+.get-button{
+  margin-top: 35%;
+}
+.get-btn{
+  padding: 2% 9%;
+  font-size: 25px;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  background: rgba(0, 224, 234, 0.5);
+  color: black;
+}
+.get-btn:hover{
+  color: black;
+}
+.arrow_next{
+  position: absolute;
+  bottom: 70px;
+  left: 250px;
+}
+.arrow_prev{
+  position: absolute;
+  bottom: 70px;
+  left: 150px;
+}
+
+/*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
+
+
+@media only screen and (max-width : 1024px){
+  .navbar-brand{
+    padding-left: 7;
+  }
+  .nav-logo{
+    width: 175px;
+  }
+  .slider-aboutus{
+    padding-right: 65%;
+  }
+  .text-slider{
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  .arrow_prev{
+    left: 13%;
+  }
+  .arrow_next{
+    left: 23%;
+  }
 }
