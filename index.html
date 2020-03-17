@@ -20,7 +20,19 @@
 
     $(document).ready(function(){
 
-      $('.slider-aboutus').slick({
+      $("#services").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".services").offset().top
+        }, 1500);
+      });
+
+      $("#aboutus").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".aboutus").offset().top
+        }, 1500);
+      });
+
+      $('.slider-home').slick({
         dots:false,
         arrows:true,
         nextArrow:'<img src="images/next.png" class="arrow_next">',
@@ -41,7 +53,7 @@
     <div class="fixed-background container-fluid">
 
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -49,10 +61,10 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">about us</a>
+                <a class="nav-link" href="#" id="aboutus">about us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
+                <a class="nav-link" href="#" id="services">services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">contact us</a>
@@ -64,9 +76,9 @@
 
       <main>
 
-        <section class="aboutus">
+        <section class="home">
 
-            <div class="slider-aboutus row d-flex align-items-center">
+            <div class="slider-home row d-flex align-items-center">
 
               <div class="slide col-4">
                 <div class="">
@@ -98,6 +110,34 @@
                 </div>
               </div>
 
+          </div>
+
+        </section>
+
+        <section class="aboutus">
+
+          <div class="main-aboutus d-flex align-items-center justify-content-start row">
+            <h1 class="text-aboutus col-lg-4 col-md-6">We are a digital impact agency providing web development services for small and newly emerging businesses. Our products are offered at a fair price, whilst advancing young female developers in pakistan. Implemented by young female developers, mentored by professional developers.</h1>
+          </div>
+
+        </section>
+
+        <section class="services">
+
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-one align-items-center d-flex justify-content-center">
+              <h1 class="text-services">design</h1>
+            </div>
+          </div>
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-two align-items-center d-flex justify-content-center">
+              <h1 class="text-services">development</h1>
+            </div>
+          </div>
+            <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-three align-items-center d-flex justify-content-center">
+              <h1 class="text-services">cms</h1>
+            </div>
           </div>
 
         </section>

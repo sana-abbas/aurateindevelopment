@@ -13,7 +13,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  height: 2500px;
 }
 .bg-light{
   background-color: transparent!important;
@@ -34,16 +34,17 @@ body{
   font-size: 1.3em;
   font-weight: 600;
 }
-.slider-aboutus{
-  height: 75vh;
+.slider-home{
+  height: 100vh;
   padding-left: 4%;
   padding-right: 75%;
 }
 .slide{
-  height: 50vh;
+  height: 60vh;
   text-align: center;
 }
 .text-slider{
+  padding-top: 25%;
   line-height: 1.4;
 }
 .get-button{
@@ -62,15 +63,51 @@ body{
 }
 .arrow_next{
   position: absolute;
-  bottom: 70px;
+  bottom: 15%;
   left: 250px;
 }
 .arrow_prev{
   position: absolute;
-  bottom: 70px;
+  bottom: 15%;
   left: 150px;
 }
-
+.main-aboutus{
+  height: 100vh;
+}
+.text-aboutus{
+  font-size: 1.7rem;
+  text-align: center;
+  padding-left: 4%;
+}
+.services{
+  height: 100vh;
+  padding-top: 10%;
+}
+.main-services{
+  height: 120px;
+  margin-bottom: 3%;
+}
+.service-one{
+  height: 100%;
+  background-image: url('images/design.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-two{
+  height: 100%;
+  background-image: url('images/development.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-three{
+  height: 100%;
+  background-image: url('images/cms.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-services{
+  text-align: center;
+}
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
 
@@ -81,7 +118,7 @@ body{
   .nav-logo{
     width: 175px;
   }
-  .slider-aboutus{
+  .slider-home{
     padding-right: 65%;
   }
   .text-slider{
@@ -94,4 +131,12 @@ body{
   .arrow_next{
     left: 23%;
   }
+  .services{
+    padding-top: 16%;
+  }
+  .main-services{
+    padding-left: 4%;
+  }
 }
+
+/*------------------------------- Mobile Breakpoint -------------------------------------*/
