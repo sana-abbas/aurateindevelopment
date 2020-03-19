@@ -32,15 +32,38 @@
         }, 1500);
       });
 
+      $("#team").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".team").offset().top
+        }, 1500);
+      });
+
       $('.slider-home').slick({
+        dots:false,
+        arrows:true,
+        //nextArrow:'<img src="images/next.png" class="arrow_next">',
+        //prevArrow:'<img src="images/prev.png" class="arrow_prev">',
+        infinite: true,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+        autoplaySpeed: 2500,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+
+      $('.slider-team').slick({
         dots:false,
         arrows:true,
         nextArrow:'<img src="images/next.png" class="arrow_next">',
         prevArrow:'<img src="images/prev.png" class="arrow_prev">',
         infinite: true,
         //autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 900,
+        //fade: true,
+        // cssEase: 'linear',
+        autoplaySpeed: 2500,
+        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
       });
@@ -55,10 +78,10 @@
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="#" id="aboutus">about us</a>
@@ -67,7 +90,13 @@
                 <a class="nav-link" href="#" id="services">services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">contact us</a>
+                <a class="nav-link" href="#" id="team">team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">language</a>
               </li>
             </ul>
           </div>
@@ -82,7 +111,7 @@
 
               <div class="slide col-4">
                 <div class="">
-                  <h1 class="text-slider">we are a digital social impact agency.</h1>
+                  <h1 class="text-slider">we are a digital social impact agency</h1>
                 </div>
 
                 <div class="get-button">
@@ -92,7 +121,7 @@
 
               <div class="slide col-4">
                 <div class="">
-                  <h1 class="text-slider">we design and develop your webpresence.</h1>
+                  <h1 class="text-slider">we design and develop your webpresence</h1>
                 </div>
 
                 <div class="get-button">
@@ -102,7 +131,7 @@
 
               <div class="slide col-4">
                 <div class="">
-                  <h1 class="text-slider">we support and mentor female pakistani devs.</h1>
+                  <h1 class="text-slider">we support and mentor female pakistani devs</h1>
                 </div>
 
                 <div class="get-button">
@@ -139,6 +168,56 @@
               <h1 class="text-services">cms</h1>
             </div>
           </div>
+
+        </section>
+
+        <section class="team">
+
+          <section class="team">
+
+            <div class="slider-team d-flex align-items-center justify-content-start">
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">nadia</h1>
+                      <h2 class="card-para">ceo</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">marion</h1>
+                      <h2 class="card-para">cto</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">sana</h1>
+                      <h2 class="card-para">lead dev</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">shahidh</h1>
+                      <h2 class="card-para">cto</h2>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
 
         </section>
       </main>
