@@ -38,6 +38,12 @@
         }, 1500);
       });
 
+      $("#contact").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".contact").offset().top
+        }, 1500);
+      });
+
       $('.slider-home').slick({
         dots:false,
         arrows:true,
@@ -93,7 +99,7 @@
                 <a class="nav-link" href="#" id="team">team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" href="#" id="contact">contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">language</a>
@@ -220,6 +226,42 @@
             </div>
 
         </section>
+
+        <section class="contact d-flex align-items-center justify-content-start">
+
+          <div class="main-form d-flex align-items-center justify-content-center">
+            <div class="form align-items-center justify-content-center">
+              <!-- <h2 class="heading-form">contact us</h2> -->
+              <span id="error"></span>
+              <span id="sent"></span>
+
+              <form method="post" action="#" class="myform">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="your name" class="form-control name">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="email" placeholder="your email address" class="form-control">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="option-box">
+                    <option class="value" value="" disabled selected>select service</option>
+                    <option class="value" value="Web-Creation">Web Creation</option>
+                    <option class="value" value="Web-Advertisement">Web Advertisement</option>
+                    <option class="value" value="Digital-Marketing">Digital Marketing</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" rows="3" cols="30" class="form-control" placeholder="your message"></textarea>
+                </div>
+                <div class="submit-btn">
+                  <input type="button" id="submit" value="submit" class="form-submit">
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+		    </section>
       </main>
 
     </div>
