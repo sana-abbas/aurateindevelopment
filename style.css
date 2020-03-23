@@ -14,7 +14,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 5000px;
+  height: 100%;
 }
 .bg-light{
   background-color: transparent!important;
@@ -34,6 +34,13 @@ body{
   padding-left: .9rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.navbar-nav .dropdown-menu{
+  background-color: transparent;
+  outline: none;
+}
+.dropdown-item{
+  outline: 0;
 }
 .slider-home{
   height: 100vh;
@@ -164,7 +171,6 @@ body{
   font-size: 1.2rem;
   font-family: 'Hind Siliguri';
   outline: none;
-  /* margin-left: 4%; */
 }
 .form-submit{
   border-radius: 15px;
@@ -174,6 +180,24 @@ body{
   outline: none;
   border: 1px solid transparent;
   margin-left: 70%;
+}
+.footer-bg{
+  background-image: url('images/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10%;
+}
+.footer-links{
+  padding-bottom: 2%;
+  margin-right: 0!important;
+  margin-left: 0!important;
+  padding-left: 10%;
+}
+.footer-img{
+  width: 85px;
+  height: 85px;
 }
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
@@ -213,6 +237,9 @@ body{
   .team-slide{
     width: 250px;
     height: 430px;
+  }
+  .footer-bg{
+    padding-top: 13%;
   }
 }
 

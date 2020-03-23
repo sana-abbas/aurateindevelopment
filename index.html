@@ -65,9 +65,6 @@
         nextArrow:'<img src="images/next.png" class="arrow_next">',
         prevArrow:'<img src="images/prev.png" class="arrow_prev">',
         infinite: true,
-        //autoplay: true,
-        //fade: true,
-        // cssEase: 'linear',
         autoplaySpeed: 2500,
         speed: 500,
         slidesToShow: 1,
@@ -101,8 +98,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="#" id="contact">contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">language</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+                <div class="dropdown-menu align-items-center justify-content-center" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" id="" href="javascript:void(0)">DE</a>
+                </div>
               </li>
             </ul>
           </div>
@@ -265,6 +265,38 @@
       </main>
 
     </div>
+
+    <footer>
+      <div class="footer-bg">
+
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a tel=""> <img src="images/phone.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.instagram.com"> <img src="images/insta.png" class="footer-img" alt=""> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.twitter.com"> <img src="images/twitter.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="http://www.linkedin.com"> <img src="images/linkedin.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
 
   </body>
 </html>
