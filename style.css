@@ -38,9 +38,12 @@ body{
 .navbar-nav .dropdown-menu{
   background-color: transparent;
   outline: none;
+  border: 1px solid transparent;
 }
-.dropdown-item{
-  outline: 0;
+.dropdown-item:hover{
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: underline;
 }
 .slider-home{
   height: 100vh;
@@ -63,8 +66,8 @@ body{
   font-size: 25px;
   margin-bottom: 23px;
   border-radius: 15px;
+  color: #4D4B4B;
   background: rgba(0, 224, 234, 0.5);
-  color: black;
 }
 .get-btn:hover{
   color: #4D4B4B;
@@ -83,20 +86,34 @@ body{
   right: 0;
   display: none!important;
 }
-.main-aboutus{
+.aboutus{
   height: 100vh;
+  padding-top: 10%;
 }
-.text-aboutus{
-  font-size: 1.7rem;
-  text-align: center;
-  padding-left: 4%;
+.about-one{
+  height: 100%;
+  background-image: url('images/fair.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-two{
+  height: 100%;
+  background-image: url('images/social.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-three{
+  height: 100%;
+  background-image: url('images/dynamic.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .services{
   height: 100vh;
   padding-top: 10%;
 }
 .main-services{
-  height: 120px;
+  height: 130px;
   margin-bottom: 3%;
 }
 .service-one{
@@ -113,7 +130,7 @@ body{
 }
 .service-three{
   height: 100%;
-  background-image: url('images/cms.png');
+  background-image: url('images/marketing.png');
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -222,7 +239,7 @@ body{
   .arrow_next{
     left: 23%;
   }
-  .services{
+  .services, .aboutus{
     padding-top: 16%;
   }
   .main-services{
@@ -240,6 +257,10 @@ body{
   }
   .footer-bg{
     padding-top: 13%;
+  }
+  .footer-img{
+    width: 70px;
+    height: 70px;
   }
 }
 
