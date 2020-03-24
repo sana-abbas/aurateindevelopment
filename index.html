@@ -20,6 +20,10 @@
 
     $(document).ready(function(){
 
+      $('#nav-icon4').click(function(){
+    		$(this).toggleClass('open');
+    	});
+
       $("#services").click(function() {
         $('html, body').animate({
           scrollTop: $(".services").offset().top
@@ -82,7 +86,11 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <a class="navbar-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <div id="nav-icon4">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
@@ -127,7 +135,7 @@
 
               <div class="slide col-4">
                 <div class="">
-                  <h1 class="text-slider">we design and develop your webpresence</h1>
+                  <h1 class="text-slider">we design and develop your web presence</h1>
                 </div>
 
                 <div class="get-button">
