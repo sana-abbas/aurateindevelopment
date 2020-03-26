@@ -398,4 +398,14 @@ button:focus {
   .fixed-background{
     background-image: url('images/background-mobile.png');
   }
+  .slider-home{
+    padding-left: 45%;
+    padding-right: 4%;
+  }
+  .text-slider{
+    font-size: 1.5rem;
+  }
+  .get-btn{
+    font-size: 16px;
+  }
 }
