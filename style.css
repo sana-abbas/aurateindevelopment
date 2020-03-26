@@ -408,4 +408,33 @@ button:focus {
   .get-btn{
     font-size: 16px;
   }
+  .aboutus, .services{
+    padding-top: 20%;
+  }
+  .main-services{
+    padding-left: 45%;
+    height: 115px;
+    margin-bottom: 0;
+  }
+  .about-one{
+    background-image: url('images/fair-mobile.png');
+  }
+  .about-two{
+    background-image: url('images/social-mobile.png');
+  }
+  .about-three{
+    background-image: url('images/dynamic-mobile.png');
+  }
+  .text-services{
+    font-size: 1.5rem;
+  }
+  .service-one{
+    background-image: url('images/design-mobile.png');
+  }
+  .service-two{
+    background-image: url('images/development-mobile.png');
+  }
+  .service-three{
+    background-image: url('images/marketing-mobile.png');
+  }
 }
