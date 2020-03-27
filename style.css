@@ -171,13 +171,6 @@ button:focus {
   background-size: contain;
 }
 .team-slide{
-  width: 250px;
-  height: 425px;
-  background-color: rgba(0, 224, 234, 0.5);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 15px;
   text-align: center;
 }
 .rounded-img{
@@ -439,6 +432,36 @@ button:focus {
   }
   .service-three{
     background-image: url('images/marketing-mobile.png');
-
+  }
+  .slider-team{
+    padding-left: 43%;
+    padding-right: 4%;
+    padding-bottom: 55%;
+  }
+  .main-team{
+    background-image: url('images/team-mobile.png');
+  }
+  .card-title{
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  .card-para{
+    font-size: 1.2rem;
+  }
+  .rounded-img{
+    width: 105px;
+    height: 120px;
+  }
+  .arrow_prev{
+    right: 32%;
+    bottom: 38%;
+    left: auto;
+    width: 30px;
+  }
+  .arrow_next{
+    right: 15%;
+    bottom: 38%;
+    left:auto;
+    width: 30px;
   }
 }
