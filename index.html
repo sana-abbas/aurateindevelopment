@@ -1,1 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Auratein Development</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
 
+    $(document).ready(function(){
+
+      $("#services").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".services").offset().top
+        }, 1500);
+      });
+
+      $("#aboutus, .get-btn").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".aboutus").offset().top
+        }, 1500);
+      });
+
+      $("#team").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".team").offset().top
+        }, 1500);
+      });
+
+      $("#contact").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".contact").offset().top
+        }, 1500);
+      });
+
+      $('.slider-home').slick({
+        dots:false,
+        arrows:true,
+        //nextArrow:'<img src="images/next.png" class="arrow_next">',
+        //prevArrow:'<img src="images/prev.png" class="arrow_prev">',
+        infinite: true,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
+        autoplaySpeed: 2500,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+
+      $('.slider-team').slick({
+        dots:false,
+        arrows:true,
+        nextArrow:'<img src="images/next.png" class="arrow_next">',
+        prevArrow:'<img src="images/prev.png" class="arrow_prev">',
+        infinite: true,
+        autoplaySpeed: 2500,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+
+    });
+    </script>
+
+  </head>
+  <body>
+    <div class="fixed-background container-fluid">
+
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav  ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="aboutus">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="services">services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="team">team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="contact">contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
+                <div class="dropdown-menu align-items-center justify-content-center" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" id="" href="javascript:void(0)">DE</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+
+        <section class="home">
+
+            <div class="slider-home row d-flex align-items-center">
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we are a digital social impact agency</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we design and develop your webpresence</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+              <div class="slide col-4">
+                <div class="">
+                  <h1 class="text-slider">we educate and mentor female pakistani devs</h1>
+                </div>
+
+                <div class="get-button">
+                  <a href="#" class="get-btn">get started</a>
+                </div>
+              </div>
+
+          </div>
+
+        </section>
+
+        <section class="aboutus">
+
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 about-one align-items-center d-flex justify-content-center">
+              <h1 class="text-services">fair</h1>
+            </div>
+          </div>
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 about-two align-items-center d-flex justify-content-center">
+              <h1 class="text-services">social</h1>
+            </div>
+          </div>
+            <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 about-three align-items-center d-flex justify-content-center">
+              <h1 class="text-services">dynamic</h1>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="services">
+
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-one align-items-center d-flex justify-content-center">
+              <h1 class="text-services">design</h1>
+            </div>
+          </div>
+          <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-two align-items-center d-flex justify-content-center">
+              <h1 class="text-services">development</h1>
+            </div>
+          </div>
+            <div class="row main-services d-flex align-items-center justify-content-start">
+            <div class="col-lg-4 col-md-6 service-three align-items-center d-flex justify-content-center">
+              <h1 class="text-services">marketing</h1>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="team">
+
+          <section class="team">
+
+            <div class="slider-team d-flex align-items-center justify-content-start">
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">nadia</h1>
+                      <h2 class="card-para">ceo</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">marion</h1>
+                      <h2 class="card-para">cto</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-center main-team">
+                  <div class="team-slide d-flex align-items-center justify-content-center">
+                    <div class="">
+                      <img src="images/jane.png" alt="" class="rounded-img">
+                      <h1 class="card-title">sana</h1>
+                      <h2 class="card-para">lead dev</h2>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact d-flex align-items-center justify-content-start">
+
+          <div class="main-form d-flex align-items-center justify-content-center">
+            <div class="form align-items-center justify-content-center">
+              <!-- <h2 class="heading-form">contact us</h2> -->
+              <span id="error"></span>
+              <span id="sent"></span>
+
+              <form method="post" action="#" class="myform">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="your name" class="form-control name">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="email" placeholder="your email address" class="form-control">
+                </div>
+                <div class="form-group">
+                  <select class="form-control" id="option-box">
+                    <option class="value" value="" disabled selected>select service</option>
+                    <option class="value" value="Web-Creation">design</option>
+                    <option class="value" value="Web-Advertisement">development</option>
+                    <option class="value" value="Digital-Marketing">marketing</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" rows="3" cols="30" class="form-control" placeholder="your message"></textarea>
+                </div>
+                <div class="submit-btn">
+                  <input type="button" id="submit" value="submit" class="form-submit">
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+		    </section>
+      </main>
+
+    </div>
+
+    <footer>
+      <div class="footer-bg">
+
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a tel=""> <img src="images/phone.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.instagram.com"> <img src="images/insta.png" class="footer-img" alt=""> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.twitter.com"> <img src="images/twitter.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="http://www.linkedin.com"> <img src="images/linkedin.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+        <div class='footer-links row align-items-center d-flex justify-content-start'>
+          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="" class="footer-img"> </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

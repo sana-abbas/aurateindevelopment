@@ -1,0 +1,260 @@
+@font-face {
+  font-family: hind;
+  src: url('fonts/HindSiliguri-SemiBold.ttf');
+}
+body{
+  padding: 0;
+  margin: 0;
+  font-family: hind;
+  color: #4D4B4B;
+}
+.fixed-background{
+  background: url('images/background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+.bg-light{
+  background-color: transparent!important;
+}
+.navbar-brand{
+  padding-left: 7%;
+  padding-top: 2%;
+}
+.nav-logo{
+  width: 200px;
+}
+.navbar-nav{
+  margin-right: 4%;
+}
+.navbar-nav .nav-link {
+  padding-right: 0.9rem;
+  padding-left: .9rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.navbar-nav .dropdown-menu{
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+}
+.dropdown-item:hover{
+  background-color: transparent;
+  border: 1px solid transparent;
+  text-decoration: underline;
+}
+.slider-home{
+  height: 100vh;
+  padding-left: 4%;
+  padding-right: 75%;
+}
+.slide{
+  height: 60vh;
+  text-align: center;
+}
+.text-slider{
+  padding-top: 25%;
+  line-height: 1.4;
+}
+.get-button{
+  margin-top: 35%;
+}
+.get-btn{
+  padding: 2% 9%;
+  font-size: 25px;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  color: #4D4B4B;
+  background: rgba(0, 224, 234, 0.5);
+}
+.get-btn:hover{
+  color: #4D4B4B;
+}
+.arrow_next{
+  position: absolute;
+  bottom: 10%;
+  left: 16%;
+}
+.arrow_prev{
+  position: absolute;
+  bottom: 10%;
+  left: 8%;
+}
+.slick-next{
+  right: 0;
+  display: none!important;
+}
+.aboutus{
+  height: 100vh;
+  padding-top: 10%;
+}
+.about-one{
+  height: 100%;
+  background-image: url('images/fair.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-two{
+  height: 100%;
+  background-image: url('images/social.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.about-three{
+  height: 100%;
+  background-image: url('images/dynamic.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services{
+  height: 100vh;
+  padding-top: 10%;
+}
+.main-services{
+  height: 130px;
+  margin-bottom: 3%;
+}
+.service-one{
+  height: 100%;
+  background-image: url('images/design.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-two{
+  height: 100%;
+  background-image: url('images/development.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service-three{
+  height: 100%;
+  background-image: url('images/marketing.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text-services{
+  text-align: center;
+}
+.slider-team{
+  height: 100vh;
+  padding-left: 4%;
+  padding-right: 75%;
+}
+.main-team{
+  width: 300px;
+  height: 460px;
+  background-image: url('images/team.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.team-slide{
+  text-align: center;
+}
+.rounded-img{
+  height: 250px;
+  width: 200px;
+}
+.card-title{
+  padding-top: 25px;
+}
+.contact{
+  height: 100vh;
+  padding-left: 4%;
+  padding-top: 2%;
+}
+.main-form{
+  height: 500px;
+  background-image: url('images/contactform.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.form{
+  padding: 2%;
+  width: 90%;
+}
+.form-control{
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: 'Hind Siliguri';
+  outline: none;
+}
+.form-submit{
+  border-radius: 15px;
+  background-color: #FD0257;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  outline: none;
+  border: 1px solid transparent;
+  margin-left: 70%;
+}
+.footer-bg{
+  background-image: url('images/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10%;
+}
+.footer-links{
+  padding-bottom: 2%;
+  margin-right: 0!important;
+  margin-left: 0!important;
+  padding-left: 10%;
+}
+.footer-img{
+  width: 85px;
+  height: 85px;
+}
+/*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
+
+
+@media only screen and (max-width : 1024px){
+  .navbar-brand{
+    padding-left: 7;
+  }
+  .nav-logo{
+    width: 175px;
+  }
+  .slider-home{
+    padding-right: 65%;
+  }
+  .text-slider{
+    line-height: 1.2;
+    font-size: 2rem;
+  }
+  .arrow_prev{
+    left: 13%;
+  }
+  .arrow_next{
+    left: 23%;
+  }
+  .services, .aboutus{
+    padding-top: 16%;
+  }
+  .main-services{
+    padding-left: 4%;
+  }
+  .slider-team{
+    padding-right: 60%;
+  }
+  .main-team{
+    height: 460px;
+  }
+  .team-slide{
+    width: 250px;
+    height: 430px;
+  }
+  .footer-bg{
+    padding-top: 13%;
+  }
+  .footer-img{
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*------------------------------- Mobile Breakpoint -------------------------------------*/
