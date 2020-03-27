@@ -31,6 +31,9 @@ button:focus {
   padding-left: 7%;
   padding-top: 2%;
   z-index: 9999;
+  background-color: rgb(179, 210, 212) !important;
+  box-shadow: 0 0 5px 10px rgb(179, 210, 212);
+  width: 40%;
 }
 .nav-logo{
   width: 200px;
@@ -240,9 +243,6 @@ button:focus {
   .navbar-nav .nav-link{
     font-size: 1.2rem;
   }
-  .navbar-brand{
-    padding-left: 7;
-  }
   .nav-logo{
     width: 175px;
   }
@@ -264,6 +264,9 @@ button:focus {
   }
   .main-services{
     padding-left: 4%;
+  }
+  .text-services{
+    font-size: 2rem;
   }
   .slider-team{
     padding-right: 60%;
@@ -436,6 +439,6 @@ button:focus {
   }
   .service-three{
     background-image: url('images/marketing-mobile.png');
-    
+
   }
 }
