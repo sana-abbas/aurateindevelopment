@@ -20,6 +20,14 @@
 
     $(document).ready(function(){
 
+      // $(function () {
+      //   $(document).scroll(function () {
+      //     var $nav = $(".bg-light");
+      //     var $fixed = $("#fixed");
+      //     $nav.toggleClass('scrolled', $(this).scrollTop() > $fixed.height());
+      //   });
+      // });
+
       $('.dropdown-item, #aboutus, #team, #contact, #services').click(function(){
          $('.navbar-collapse').collapse('hide');
          $('#nav-icon4').toggleClass('open');
@@ -85,7 +93,7 @@
 
   </head>
   <body>
-    <div class="fixed-background container-fluid">
+    <div class="fixed-background container-fluid" id="fixed">
 
       <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -246,6 +254,7 @@
 
           <div class="main-form d-flex align-items-center justify-content-center">
             <div class="form align-items-center justify-content-center">
+              <h1 class="form-heading">contact us</h1>
               <span id="error"></span>
               <span id="sent"></span>
 
@@ -258,10 +267,10 @@
                 </div>
                 <div class="form-group">
                   <select class="form-control" id="option-box">
-                    <option class="value" value="" disabled selected>service</option>
-                    <option class="value" value="Web-Creation">design</option>
-                    <option class="value" value="Web-Advertisement">development</option>
-                    <option class="value" value="Digital-Marketing">marketing</option>
+                    <option class="value form-control" value="" disabled selected>service</option>
+                    <option class="value form-control" value="Web-Creation">design</option>
+                    <option class="value form-control" value="Web-Advertisement">development</option>
+                    <option class="value form-control" value="Digital-Marketing">marketing</option>
                   </select>
                 </div>
                 <div class="form-group">

@@ -14,7 +14,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
 }
 .navbar-light .navbar-toggler {
   color:#4D4B4B;
@@ -28,11 +27,11 @@ button:focus {
   background-color: transparent!important;
 }
 .navbar-brand{
+  background-color: rgb(179, 210, 212)!important;
+  box-shadow: 0 0 5px 10px rgb(179, 210, 212);
   padding-left: 7%;
   padding-top: 2%;
   z-index: 9999;
-  background-color: rgb(179, 210, 212) !important;
-  box-shadow: 0 0 5px 10px rgb(179, 210, 212);
   width: 40%;
 }
 .nav-logo{
@@ -96,11 +95,13 @@ button:focus {
   position: absolute;
   bottom: 10%;
   left: 16%;
+  z-index: 99;
 }
 .arrow_prev{
   position: absolute;
   bottom: 10%;
   left: 8%;
+  z-index: 99;
 }
 .slick-next{
   right: 0;
@@ -195,6 +196,12 @@ button:focus {
 .form{
   padding: 2%;
   width: 90%;
+}
+.form-heading{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 2%;
+  color:
 }
 .form-control{
   width: 100%;
@@ -463,5 +470,11 @@ button:focus {
     bottom: 38%;
     left:auto;
     width: 30px;
+  }
+  .form-submit{
+    margin-left: 68%;
+  }
+  .footer-bg{
+    background-image: url('images/footer-mobile.png');
   }
 }
