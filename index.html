@@ -20,13 +20,12 @@
 
     $(document).ready(function(){
 
-      // $(function () {
-      //   $(document).scroll(function () {
-      //     var $nav = $(".bg-light");
-      //     var $fixed = $("#fixed");
-      //     $nav.toggleClass('scrolled', $(this).scrollTop() > $fixed.height());
-      //   });
-      // });
+        $(document).scroll(function(){
+          var nav = $(".bg-light");
+          var fixed = $("#fixed").outerHeight(true);
+          console.log(fixed);
+          nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
+        });
 
       $('.dropdown-item, #aboutus, #team, #contact, #services').click(function(){
          $('.navbar-collapse').collapse('hide');
@@ -292,29 +291,25 @@
     <footer>
       <div class="footer-bg">
 
-        <div class='footer-links row align-items-center d-flex justify-content-start'>
-          <div class="col-lg-4 col-md-6 align-items-center d-flex">
-            <a tel=""> <img src="images/phone.png" alt="" class="footer-img"> </a>
+        <div class="row footer-row">
+          <div class='footer-links d-flex justify-content-start col-md-12 col-sm-4'>
+            <a tel=""> <img src="images/phone.png" alt="" class="footer-img tele"> </a>
           </div>
-        </div>
-        <div class='footer-links row align-items-center d-flex justify-content-start'>
-          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+          <div class='footer-links col-md-12 col-sm-4 d-flex justify-content-start'>
             <a href="https://www.instagram.com"> <img src="images/insta.png" class="footer-img" alt=""> </a>
           </div>
         </div>
-        <div class='footer-links row align-items-center d-flex justify-content-start'>
-          <div class="col-lg-4 col-md-6 align-items-center d-flex">
-            <a href="https://www.twitter.com"> <img src="images/twitter.png" alt="" class="footer-img"> </a>
+        <div class="row footer-row">
+          <div class='footer-links col-md-12 col-sm-6 d-flex justify-content-start'>
+            <a href="https://www.twitter.com"> <img src="images/twitter.png" alt="" class="footer-img twitter"> </a>
           </div>
-        </div>
-        <div class='footer-links row align-items-center d-flex justify-content-start'>
-          <div class="col-lg-4 col-md-6 align-items-center d-flex">
+          <div class='footer-links col-md-12 col-sm-6 d-flex justify-content-start'>
             <a href="http://www.linkedin.com"> <img src="images/linkedin.png" alt="" class="footer-img"> </a>
           </div>
         </div>
-        <div class='footer-links row align-items-center d-flex justify-content-start'>
-          <div class="col-lg-4 col-md-6 align-items-center d-flex">
-            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="" class="footer-img"> </a>
+        <div class="row footer-row">
+          <div class='footer-links col-md-12 d-flex justify-content-start'>
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="" class="footer-img facebook"> </a>
           </div>
         </div>
 

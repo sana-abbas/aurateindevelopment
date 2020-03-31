@@ -20,15 +20,22 @@ body{
   border-color: transparent;
   z-index: 9999;
 }
+.navbar{
+  height: 70px;
+}
 button:focus {
   outline: 0;
 }
 .bg-light{
-  background-color: transparent!important;
-}
-.navbar-brand{
   background-color: rgb(179, 210, 212)!important;
   box-shadow: 0 0 5px 10px rgb(179, 210, 212);
+  /* background-color: transparent!important; */
+}
+.bg-light.scrolled{
+  background-color: transparent!important;
+  box-shadow: none!important;
+}
+.navbar-brand{
   padding-left: 7%;
   padding-top: 2%;
   z-index: 9999;
@@ -213,6 +220,7 @@ button:focus {
   border-radius: 15px;
   background-color: #FD0257;
   font-size: 1.2rem;
+  color: #4D4B4B;
   padding: 5px 8px;
   outline: none;
   border: 1px solid transparent;
@@ -227,15 +235,20 @@ button:focus {
   padding-top: 10%;
 }
 .footer-links{
-  padding-bottom: 2%;
   margin-right: 0!important;
   margin-left: 0!important;
+  padding-bottom: 2%;
   padding-left: 10%;
 }
 .footer-img{
   width: 85px;
   height: 85px;
 }
+/* .footer-row{
+  overflow: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+} */
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
 
@@ -285,11 +298,17 @@ button:focus {
     width: 70px;
     height: 70px;
   }
+  .service-one{
+    background-image: url('images/vector.png');
+  }
 }
 
 /*------------------------------- Mobile Breakpoint -------------------------------------*/
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+  .navbar{
+    height: 50px;
+  }
   #nav-icon4 {
     width: 35px;
     height: 40px;
@@ -476,5 +495,26 @@ button:focus {
   }
   .footer-bg{
     background-image: url('images/footer-mobile.png');
+    padding-top: 25%;
+  }
+  .justify-content-start{
+    justify-content: center!important;
+  }
+  .footer-img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .row{
+    flex-wrap: nowrap;
+  }
+  .footer-row{
+    padding-bottom: 8%;
+  }
+  .tele, .twitter{
+    margin-left: 60px;
+  }
+  .facebook{
+    margin-left: 40px;
   }
 }
