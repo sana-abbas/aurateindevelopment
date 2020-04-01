@@ -23,7 +23,6 @@
         $(document).scroll(function(){
           var nav = $(".bg-light");
           var fixed = $("#fixed").outerHeight(true);
-          console.log(fixed);
           nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
         });
 
@@ -86,6 +85,64 @@
         slidesToShow: 1,
         slidesToScroll: 1,
       });
+
+      $('#formValidate').validate({
+        rules:{
+          name:{
+            required: true,
+            minlength: 3,
+          },
+          email:{
+            required: true,
+            email: true,
+          },
+          service:{
+            required: true,
+          },
+          message:{
+            required: true,
+          },
+        },
+      });
+
+      $('#submit').click(function(){
+
+        var isvalid = $('#formValidate').valid();
+        if (!isvalid) {
+          console.log('error in validation');
+          return false;
+        }else {
+
+        var formData = {
+          'name' : $('#name').val(),
+          'email' : $('#email').val(),
+          'service' : $("#option-box").val(),
+          'message' : $("#message").val(),
+          }
+
+            $.ajax({
+
+              type: "POST",
+
+              url: "ajax.php",
+
+              data: {
+                  formData,
+                 },
+
+            success: function(response) {
+                console.log(response);
+               $('form').hide();
+               $('.form-heading').hide();
+               $('#sent').css('display' , 'block');
+               $('#sent').show();
+          },
+          error: function (jqXHR, textStatus, errorThrown) {
+              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+          }
+        });
+  }
+        });
 
     });
     </script>
@@ -254,26 +311,24 @@
           <div class="main-form d-flex align-items-center justify-content-center">
             <div class="form align-items-center justify-content-center">
               <h1 class="form-heading">contact us</h1>
-              <span id="error"></span>
-              <span id="sent"></span>
 
-              <form method="post" action="#" class="myform">
+              <form method="post" action="#" class="myform" id="formValidate">
                 <div class="form-group">
-                  <input type="text" id="name" placeholder="your name" class="form-control name">
+                  <input type="text" id="name" name="name" required placeholder="your name" class="form-control"><span></span>
                 </div>
                 <div class="form-group">
-                  <input type="text" id="email" placeholder="your email address" class="form-control">
+                  <input type="email" id="email" required name="email" placeholder="your email address" class="form-control"><span></span>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" id="option-box">
+                  <select class="form-control" name="service" id="option-box" required>
                     <option class="value form-control" value="" disabled selected>service</option>
                     <option class="value form-control" value="Web-Creation">design</option>
                     <option class="value form-control" value="Web-Advertisement">development</option>
                     <option class="value form-control" value="Digital-Marketing">marketing</option>
-                  </select>
+                  </select><span></span>
                 </div>
                 <div class="form-group">
-                  <textarea name="message" rows="3" cols="30" class="form-control" placeholder="your message"></textarea>
+                  <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="your message"></textarea><span></span>
                 </div>
                 <div class="submit-btn">
                   <input type="button" id="submit" value="submit" class="form-submit">
@@ -308,7 +363,7 @@
           </div>
         </div>
         <div class="row footer-row">
-          <div class='footer-links col-md-12 d-flex justify-content-start'>
+          <div class='footer-links col-md-12 d-flex justify-content-start face-div'>
             <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="" class="footer-img facebook"> </a>
           </div>
         </div>

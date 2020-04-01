@@ -20,6 +20,10 @@ body{
   border-color: transparent;
   z-index: 9999;
 }
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
 .navbar{
   height: 70px;
 }
@@ -110,7 +114,7 @@ button:focus {
   left: 8%;
   z-index: 99;
 }
-.slick-next{
+.slick-next, .slick-prev{
   right: 0;
   display: none!important;
 }
@@ -191,24 +195,25 @@ button:focus {
 .contact{
   height: 100vh;
   padding-left: 4%;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 .main-form{
-  height: 500px;
+  height: 650px;
+  width: fit-content;
   background-image: url('images/contactform.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100% 80%;;
 }
 .form{
-  padding: 2%;
-  width: 90%;
+  padding: 5%;
+  width: 95% ;
 }
 .form-heading{
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 2%;
-  color:
+  color: #4D4B4B;
 }
 .form-control{
   width: 100%;
@@ -243,6 +248,9 @@ button:focus {
 .footer-img{
   width: 85px;
   height: 85px;
+}
+.face-div{
+  padding-bottom: 4%;
 }
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
@@ -303,6 +311,9 @@ button:focus {
   .card-para{
     font-size: 1.7rem;
   }
+  .form-control{
+    font-size: 1rem;
+  }
   .rounded-img{
     height: 200px;
     width: 150px;
@@ -314,9 +325,6 @@ button:focus {
   .footer-img{
     width: 70px;
     height: 70px;
-  }
-  .service-one{
-    background-image: url('images/vector.png');
   }
 }
 
@@ -438,8 +446,8 @@ button:focus {
     background-image: url('images/background-mobile.png');
   }
   .slider-home{
-    padding-left: 45%;
-    padding-right: 4%;
+    padding-left: 35%;
+    padding-right: 0%;
   }
   .text-slider{
     font-size: 1.5rem;
@@ -457,24 +465,30 @@ button:focus {
   }
   .about-one{
     background-image: url('images/fair-mobile.png');
+    background-size: 50%;
   }
   .about-two{
     background-image: url('images/social-mobile.png');
+    background-size: 60%;
   }
   .about-three{
     background-image: url('images/dynamic-mobile.png');
+    background-size: 80%;
   }
   .text-services{
     font-size: 1.5rem;
   }
   .service-one{
     background-image: url('images/design-mobile.png');
+    background-size: 55%;
   }
   .service-two{
     background-image: url('images/development-mobile.png');
+    background-size: contain;
   }
   .service-three{
     background-image: url('images/marketing-mobile.png');
+    background-size: 80%;
   }
   .slider-team{
     padding-left: 43%;
@@ -525,13 +539,17 @@ button:focus {
   .row{
     flex-wrap: nowrap;
   }
+  .footer-links{
+    padding-left: 0;
+  }
   .footer-row{
-    padding-bottom: 8%;
+    padding: 8% 0;
+    padding-left: 15%;
   }
   .tele, .twitter{
-    margin-left: 60px;
+    margin-left: 90px;
   }
   .facebook{
-    margin-left: 40px;
+    margin-left: 80px;
   }
 }
