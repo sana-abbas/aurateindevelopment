@@ -252,6 +252,11 @@ button:focus {
 .face-div{
   padding-bottom: 4%;
 }
+#sent{
+  display: none;
+  font-size: 2em;
+  text-align: center;
+}
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
 
@@ -333,6 +338,10 @@ button:focus {
 @media only screen and (min-width : 320px) and (max-width : 480px) {
   .navbar{
     height: 50px;
+  }
+  .bg-light{
+    background-color: #aad7da!important;
+    box-shadow: none;
   }
   #nav-icon4 {
     width: 35px;
