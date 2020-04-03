@@ -255,6 +255,7 @@ button:focus {
 #sent{
   display: none;
   font-size: 2em;
+  width: 300px;
   text-align: center;
 }
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
@@ -330,6 +331,9 @@ button:focus {
   .footer-img{
     width: 70px;
     height: 70px;
+  }
+  #sent{
+    width: 250px;
   }
 }
 
@@ -452,7 +456,7 @@ button:focus {
     font-size: 1.2rem;
   }
   .fixed-background{
-    background-image: url('images/background-mobile.png');
+    background-image: url('images/background-mobile.jpg');
   }
   .slider-home{
     padding-left: 35%;
