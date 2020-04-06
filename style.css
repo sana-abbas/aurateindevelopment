@@ -14,25 +14,35 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
 }
 .navbar-light .navbar-toggler {
   color:#4D4B4B;
   border-color: transparent;
   z-index: 9999;
 }
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbar{
+  height: 70px;
+}
 button:focus {
   outline: 0;
 }
 .bg-light{
+  background-color: rgb(179, 210, 212)!important;
+  box-shadow: 0 0 5px 10px rgb(179, 210, 212);
+  /* background-color: transparent!important; */
+}
+.bg-light.scrolled{
   background-color: transparent!important;
+  box-shadow: none!important;
 }
 .navbar-brand{
   padding-left: 7%;
   padding-top: 2%;
   z-index: 9999;
-  background-color: rgb(179, 210, 212) !important;
-  box-shadow: 0 0 5px 10px rgb(179, 210, 212);
   width: 40%;
 }
 .nav-logo{
@@ -96,13 +106,15 @@ button:focus {
   position: absolute;
   bottom: 10%;
   left: 16%;
+  z-index: 99;
 }
 .arrow_prev{
   position: absolute;
   bottom: 10%;
   left: 8%;
+  z-index: 99;
 }
-.slick-next{
+.slick-next, .slick-prev{
   right: 0;
   display: none!important;
 }
@@ -183,18 +195,25 @@ button:focus {
 .contact{
   height: 100vh;
   padding-left: 4%;
-  padding-top: 2%;
+  padding-top: 5%;
 }
 .main-form{
-  height: 500px;
+  height: 650px;
+  width: fit-content;
   background-image: url('images/contactform.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 100% 80%;;
 }
 .form{
-  padding: 2%;
-  width: 90%;
+  padding: 5%;
+  width: 95% ;
+}
+.form-heading{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 2%;
+  color: #4D4B4B;
 }
 .form-control{
   width: 100%;
@@ -206,6 +225,7 @@ button:focus {
   border-radius: 15px;
   background-color: #FD0257;
   font-size: 1.2rem;
+  color: #4D4B4B;
   padding: 5px 8px;
   outline: none;
   border: 1px solid transparent;
@@ -220,14 +240,23 @@ button:focus {
   padding-top: 10%;
 }
 .footer-links{
-  padding-bottom: 2%;
   margin-right: 0!important;
   margin-left: 0!important;
+  padding-bottom: 2%;
   padding-left: 10%;
 }
 .footer-img{
   width: 85px;
   height: 85px;
+}
+.face-div{
+  padding-bottom: 4%;
+}
+#sent{
+  display: none;
+  font-size: 2em;
+  width: 300px;
+  text-align: center;
 }
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
@@ -240,7 +269,7 @@ button:focus {
     width: 175px;
   }
   .slider-home{
-    padding-right: 65%;
+    padding-right: 55%;
   }
   .text-slider{
     line-height: 1.2;
@@ -261,28 +290,63 @@ button:focus {
   .text-services{
     font-size: 2rem;
   }
+  .about-one, .service-one{
+    background-size: 35%;
+  }
+  .about-two{
+    background-size: 40%;
+  }
+  .about-three{
+    background-size: 60%;
+  }
+  .service-two{
+    background-size: 70%;
+  }
+  .service-three{
+    background-size: 55%;
+  }
   .slider-team{
     padding-right: 60%;
   }
   .main-team{
-    height: 460px;
+    height: 410px;
   }
-  .team-slide{
-    width: 250px;
-    height: 430px;
+  .card-title{
+    font-size: 2rem;
+  }
+  .card-para{
+    font-size: 1.7rem;
+  }
+  .form-control{
+    font-size: 1rem;
+  }
+  .rounded-img{
+    height: 200px;
+    width: 150px;
   }
   .footer-bg{
     padding-top: 13%;
+    padding-left: 4%;
   }
   .footer-img{
     width: 70px;
     height: 70px;
+  }
+  #sent{
+    width: 250px;
   }
 }
 
 /*------------------------------- Mobile Breakpoint -------------------------------------*/
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
+  .navbar{
+    height: 50px;
+  }
+  .bg-light{
+    background-color: #aad7da!important;
+    box-shadow: none;
+  }
   #nav-icon4 {
     width: 35px;
     height: 40px;
@@ -392,11 +456,11 @@ button:focus {
     font-size: 1.2rem;
   }
   .fixed-background{
-    background-image: url('images/background-mobile.png');
+    background-image: url('images/background-mobile.jpg');
   }
   .slider-home{
-    padding-left: 45%;
-    padding-right: 4%;
+    padding-left: 35%;
+    padding-right: 0%;
   }
   .text-slider{
     font-size: 1.5rem;
@@ -414,24 +478,91 @@ button:focus {
   }
   .about-one{
     background-image: url('images/fair-mobile.png');
+    background-size: 50%;
   }
   .about-two{
     background-image: url('images/social-mobile.png');
+    background-size: 60%;
   }
   .about-three{
     background-image: url('images/dynamic-mobile.png');
+    background-size: 80%;
   }
   .text-services{
     font-size: 1.5rem;
   }
   .service-one{
     background-image: url('images/design-mobile.png');
+    background-size: 55%;
   }
   .service-two{
     background-image: url('images/development-mobile.png');
+    background-size: contain;
   }
   .service-three{
     background-image: url('images/marketing-mobile.png');
-
+    background-size: 80%;
+  }
+  .slider-team{
+    padding-left: 43%;
+    padding-right: 4%;
+    padding-bottom: 55%;
+  }
+  .main-team{
+    background-image: url('images/team-mobile.png');
+  }
+  .card-title{
+    font-size: 1.5rem;
+    padding-top: 15px;
+  }
+  .card-para{
+    font-size: 1.2rem;
+  }
+  .rounded-img{
+    width: 105px;
+    height: 120px;
+  }
+  .arrow_prev{
+    right: 32%;
+    bottom: 38%;
+    left: auto;
+    width: 30px;
+  }
+  .arrow_next{
+    right: 15%;
+    bottom: 38%;
+    left:auto;
+    width: 30px;
+  }
+  .form-submit{
+    margin-left: 68%;
+  }
+  .footer-bg{
+    background-image: url('images/footer-mobile.png');
+    padding-top: 25%;
+  }
+  .justify-content-start{
+    justify-content: center!important;
+  }
+  .footer-img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+  }
+  .row{
+    flex-wrap: nowrap;
+  }
+  .footer-links{
+    padding-left: 0;
+  }
+  .footer-row{
+    padding: 8% 0;
+    padding-left: 15%;
+  }
+  .tele, .twitter{
+    margin-left: 90px;
+  }
+  .facebook{
+    margin-left: 80px;
   }
 }
