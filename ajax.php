@@ -11,6 +11,8 @@ if (isset($_POST['formData'])) {
 
     $mail = new PHPMailer;
 	  $mail->isSMTP(true);
+		$mail->CharSet = 'UTF-8';
+		$mail->Encoding = 'base64';
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'agency.impact01@gmail.com';
