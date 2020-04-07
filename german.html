@@ -87,32 +87,32 @@
         slidesToScroll: 1,
       });
 
-      $('#formValidate').validate({
-        rules:{
-          name:{
-            required: true,
-            minlength: 3,
-          },
-          email:{
-            required: true,
-            email: true,
-          },
-          service:{
-            required: true,
-          },
-          message:{
-            required: true,
-          },
-        },
-      });
-
-      $('#submit').click(function(){
-
-        var isvalid = $('#formValidate').valid();
-        if (!isvalid) {
-          console.log('error in validation');
-          return false;
-        }else {
+      // $('#formValidate').validate({
+      //   rules:{
+      //     name:{
+      //       required: true,
+      //       minlength: 3,
+      //     },
+      //     email:{
+      //       required: true,
+      //       email: true,
+      //     },
+      //     service:{
+      //       required: true,
+      //     },
+      //     message:{
+      //       required: true,
+      //     },
+      //   },
+      // });
+      //
+      // $('#submit').click(function(){
+      //
+      //   var isvalid = $('#formValidate').valid();
+      //   if (!isvalid) {
+      //     console.log('error in validation');
+      //     return false;
+      //   }else {
 
         // var formData = {
         //   'name' : $('#name').val(),
@@ -309,12 +309,12 @@
               <h1 class="form-heading">kontaktiere uns</h1>
               <span id="sent">danke für deine anfrage. wir melden uns sobald als möglich.</span>
 
-              <form method="post" action="#" class="myform" id="formValidate" netlify>
+              <form method="post" name="german-form"  data-netlify="true">
                 <div class="form-group">
-                  <input type="text" id="name" name="name" required placeholder="dein name" class="form-control"><span></span>
+                  <input type="text" id="name" name="name" required placeholder="dein name" class="form-control">
                 </div>
                 <div class="form-group">
-                  <input type="email" id="email" required name="email" placeholder="deine e-mail-adresse" class="form-control"><span></span>
+                  <input type="email" id="email" required name="email" placeholder="deine e-mail-adresse" class="form-control">
                 </div>
                 <div class="form-group">
                   <select class="form-control" name="service[]" id="option-box" required>
@@ -322,10 +322,10 @@
                     <option class="value form-control" value="design">design</option>
                     <option class="value form-control" value="development">entwicklung</option>
                     <option class="value form-control" value="marketing">marketing</option>
-                  </select><span></span>
+                  </select>
                 </div>
                 <div class="form-group">
-                  <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="deine nachricht"></textarea><span></span>
+                  <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="deine nachricht"></textarea>
                 </div>
                 <div class="submit-btn">
                   <input type="button" id="submit" value="senden" class="form-submit">
