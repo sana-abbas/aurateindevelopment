@@ -186,7 +186,7 @@ button:focus {
   background-image: url('images/team.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: contain;
 }
 .team-slide{
   text-align: center;

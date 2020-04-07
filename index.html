@@ -309,23 +309,23 @@
               <h1 class="form-heading">contact us</h1>
               <span id="sent">thank you for contacting us. we will get back to you soon</span>
 
-              <form method="POST" name="contact" class="myform" id="formValidate" data-netlify="true">
+              <form method="POST" name="contact" data-netlify="true">
                 <div class="form-group">
-                  <input type="text" id="name" name="name" required placeholder="your name" class="form-control"><span></span>
+                  <input type="text" id="name" name="name" required placeholder="your name" class="form-control">
                 </div>
                 <div class="form-group">
-                  <input type="email" id="email" required name="email" placeholder="your email address" class="form-control"><span></span>
+                  <input type="email" id="email" required name="email" placeholder="your email address" class="form-control">
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="service[]" id="option-box" required multiple>
+                  <select class="form-control" name="service[]" id="option-box" required>
                     <option class="value form-control" value="" disabled selected>service</option>
                     <option class="value form-control" value="design">design</option>
                     <option class="value form-control" value="development">development</option>
                     <option class="value form-control" value="marketing">marketing</option>
-                  </select><span></span>
+                  </select>
                 </div>
                 <div class="form-group">
-                  <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="your message"></textarea><span></span>
+                  <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="your message"></textarea>
                 </div>
                 <div class="submit-btn">
                   <input type="button" id="submit" value="submit" class="form-submit">
