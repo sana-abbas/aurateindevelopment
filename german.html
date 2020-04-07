@@ -114,34 +114,34 @@
           return false;
         }else {
 
-        var formData = {
-          'name' : $('#name').val(),
-          'email' : $('#email').val(),
-          'service' : $("#option-box").val(),
-          'message' : $("#message").val(),
-          }
-
-            $.ajax({
-
-              type: "POST",
-
-              url: "ajax.php",
-
-              data: {
-                  formData,
-                 },
-
-            success: function(response) {
-                console.log(response);
-               $('myform').hide();
-               $('.form-heading').hide();
-               $('#sent').css('display' , 'block');
-               $('#sent').show();
-          },
-          error: function (jqXHR, textStatus, errorThrown) {
-              console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-          }
-        });
+        // var formData = {
+        //   'name' : $('#name').val(),
+        //   'email' : $('#email').val(),
+        //   'service' : $("#option-box").val(),
+        //   'message' : $("#message").val(),
+        //   }
+        //
+        //     $.ajax({
+        //
+        //       type: "POST",
+        //
+        //       url: "ajax.php",
+        //
+        //       data: {
+        //           formData,
+        //          },
+        //
+        //     success: function(response) {
+        //         console.log(response);
+        //        $('myform').hide();
+        //        $('.form-heading').hide();
+        //        $('#sent').css('display' , 'block');
+        //        $('#sent').show();
+        //   },
+        //   error: function (jqXHR, textStatus, errorThrown) {
+        //       console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+        //   }
+        // });
   }
         });
 
@@ -309,7 +309,7 @@
               <h1 class="form-heading">kontaktiere uns</h1>
               <span id="sent">danke für deine anfrage. wir melden uns sobald als möglich.</span>
 
-              <form method="post" action="#" class="myform" id="formValidate">
+              <form method="post" action="#" class="myform" id="formValidate" netlify>
                 <div class="form-group">
                   <input type="text" id="name" name="name" required placeholder="dein name" class="form-control"><span></span>
                 </div>
@@ -317,7 +317,7 @@
                   <input type="email" id="email" required name="email" placeholder="deine e-mail-adresse" class="form-control"><span></span>
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="service" id="option-box" required>
+                  <select class="form-control" name="service[]" id="option-box" required>
                     <option class="value form-control" value="" disabled selected>service</option>
                     <option class="value form-control" value="design">design</option>
                     <option class="value form-control" value="development">entwicklung</option>
