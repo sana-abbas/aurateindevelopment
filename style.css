@@ -127,10 +127,12 @@ button:focus {
   background-image: url('images/fair.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 }
 .about-two{
   height: 100%;
   background-image: url('images/social.png');
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -138,6 +140,7 @@ button:focus {
   height: 100%;
   background-image: url('images/dynamic.png');
   background-repeat: no-repeat;
+  background-size: auto;
   background-position: center;
 }
 .services{
@@ -153,18 +156,21 @@ button:focus {
   background-image: url('images/design.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 }
 .service-two{
   height: 100%;
   background-image: url('images/development.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 }
 .service-three{
   height: 100%;
   background-image: url('images/marketing.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
 }
 .text-services{
   text-align: center;
@@ -180,7 +186,7 @@ button:focus {
   background-image: url('images/team.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: auto;
 }
 .team-slide{
   text-align: center;
@@ -199,11 +205,11 @@ button:focus {
 }
 .main-form{
   height: 650px;
-  width: fit-content;
+  width: 350px;
   background-image: url('images/contactform.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 80%;;
+  background-size: 100% 80%;
 }
 .form{
   padding: 5%;
@@ -289,21 +295,6 @@ button:focus {
   }
   .text-services{
     font-size: 2rem;
-  }
-  .about-one, .service-one{
-    background-size: 35%;
-  }
-  .about-two{
-    background-size: 40%;
-  }
-  .about-three{
-    background-size: 60%;
-  }
-  .service-two{
-    background-size: 70%;
-  }
-  .service-three{
-    background-size: 55%;
   }
   .slider-team{
     padding-right: 60%;
@@ -447,14 +438,6 @@ button:focus {
     left: 0;
     width: 100%;
   }
-  .navbar-nav .dropdown-menu{
-    position: absolute;
-    right: 20px;
-    text-align: right;
-  }
-  .dropdown-item{
-    font-size: 1.2rem;
-  }
   .fixed-background{
     background-image: url('images/background-mobile.jpg');
   }
@@ -478,30 +461,24 @@ button:focus {
   }
   .about-one{
     background-image: url('images/fair-mobile.png');
-    background-size: 50%;
   }
   .about-two{
     background-image: url('images/social-mobile.png');
-    background-size: 60%;
   }
   .about-three{
     background-image: url('images/dynamic-mobile.png');
-    background-size: 80%;
   }
   .text-services{
     font-size: 1.5rem;
   }
   .service-one{
     background-image: url('images/design-mobile.png');
-    background-size: 55%;
   }
   .service-two{
     background-image: url('images/development-mobile.png');
-    background-size: contain;
   }
   .service-three{
     background-image: url('images/marketing-mobile.png');
-    background-size: 80%;
   }
   .slider-team{
     padding-left: 43%;
