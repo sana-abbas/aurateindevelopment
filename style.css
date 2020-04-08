@@ -140,13 +140,7 @@ button:focus {
   margin-bottom: 3%;
 }
 .service-one{
-  height: 100%;
-}
-.service-two{
-  height: 100%;
-}
-.service-three{
-  height: 100%;
+  height: 120px;
 }
 .text-services{
   text-align: center;
@@ -435,26 +429,17 @@ button:focus {
     height: 115px;
     margin-bottom: 0;
   }
-  .about-one{
-    height: 70px;
-  }
-  .about-two{
-    height: 70px;
-  }
-  .about-three{
+  .about-one, .about-two, .about-three{
     height: 70px;
   }
   .text-services{
     font-size: 1.5rem;
   }
   .service-one{
-
+    height: 70px;
   }
   .service-two{
-
-  }
-  .service-three{
-
+    width: 175px;
   }
   .slider-team{
     padding-left: 43%;
