@@ -87,24 +87,24 @@
         slidesToScroll: 1,
       });
 
-      // $('#formValidate').validate({
-      //   rules:{
-      //     name:{
-      //       required: true,
-      //       minlength: 3,
-      //     },
-      //     email:{
-      //       required: true,
-      //       email: true,
-      //     },
-      //     service:{
-      //       required: true,
-      //     },
-      //     message:{
-      //       required: true,
-      //     },
-      //   },
-      // });
+      $('#formValidate').validate({
+        rules:{
+          name:{
+            required: true,
+            minlength: 3,
+          },
+          email:{
+            required: true,
+            email: true,
+          },
+          service:{
+            required: true,
+          },
+          message:{
+            required: true,
+          },
+        },
+      });
       //
       // $('#submit').click(function(){
       //
@@ -142,8 +142,6 @@
         //       console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
         //   }
         // });
-  }
-        });
 
     });
     </script>
@@ -165,16 +163,16 @@
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav nav-list  ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#" id="aboutus">über uns</a>
+                <a class="nav-link" href="javascript:void(0)" id="aboutus">über uns</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="services">services</a>
+                <a class="nav-link" href="javascript:void(0)" id="services">services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="team">team</a>
+                <a class="nav-link" href="javascript:void(0)" id="team">team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="contact">kontakt</a>
+                <a class="nav-link" href="javascript:void(0)" id="contact">kontakt</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" id="" href="index.html">EN</a>
@@ -309,7 +307,7 @@
               <h1 class="form-heading">kontaktiere uns</h1>
               <span id="sent">danke für deine anfrage. wir melden uns sobald als möglich.</span>
 
-              <form method="post" name="german-form"  data-netlify="true">
+              <form method="POST" name="germanform" data-netlify="true">
                 <div class="form-group">
                   <input type="text" id="name" name="name" required placeholder="dein name" class="form-control">
                 </div>
@@ -317,7 +315,7 @@
                   <input type="email" id="email" required name="email" placeholder="deine e-mail-adresse" class="form-control">
                 </div>
                 <div class="form-group">
-                  <select class="form-control" name="service[]" id="option-box" required>
+                  <select class="form-control" name="service" id="option-box" required>
                     <option class="value form-control" value="" disabled selected>service</option>
                     <option class="value form-control" value="design">design</option>
                     <option class="value form-control" value="development">entwicklung</option>
@@ -328,7 +326,7 @@
                   <textarea name="message" id="message" rows="3" cols="30" required class="form-control" placeholder="deine nachricht"></textarea>
                 </div>
                 <div class="submit-btn">
-                  <input type="button" id="submit" value="senden" class="form-submit">
+                  <button type="submit" class="form-submit">senden</button>
                 </div>
               </form>
 
