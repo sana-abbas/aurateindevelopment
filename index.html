@@ -87,24 +87,24 @@
         slidesToScroll: 1,
       });
 
-      // $('#formValidate').validate({
-      //   rules:{
-      //     name:{
-      //       required: true,
-      //       minlength: 3,
-      //     },
-      //     email:{
-      //       required: true,
-      //       email: true,
-      //     },
-      //     service:{
-      //       required: true,
-      //     },
-      //     message:{
-      //       required: true,
-      //     },
-      //   },
-      // });
+      $('#formValidate').validate({
+        rules:{
+          name:{
+            required: true,
+            minlength: 3,
+          },
+          email:{
+            required: true,
+            email: true,
+          },
+          service:{
+            required: true,
+          },
+          message:{
+            required: true,
+          },
+        },
+      });
 
       // $('#submit').click(function(){
       //
@@ -309,7 +309,7 @@
               <h1 class="form-heading">contact us</h1>
               <span id="sent">thank you for contacting us. we will get back to you soon</span>
 
-              <form method="POST" name="contact" data-netlify="true">
+              <form method="POST" name="contact" data-netlify="true" id="formValidate">
                 <div class="form-group">
                   <input type="text" id="name" name="name" required placeholder="your name" class="form-control">
                 </div>
