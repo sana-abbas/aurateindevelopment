@@ -124,24 +124,12 @@ button:focus {
 }
 .about-one{
   height: 120px;
-  /* background-image: url('images/fair.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto; */
 }
 .about-two{
-  height: 100%;
-  background-image: url('images/social.png');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 120px;
 }
 .about-three{
-  height: 100%;
-  background-image: url('images/dynamic.png');
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  height: 120px;
 }
 .services{
   height: 100vh;
@@ -153,24 +141,12 @@ button:focus {
 }
 .service-one{
   height: 100%;
-  background-image: url('images/design.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 .service-two{
   height: 100%;
-  background-image: url('images/development.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 .service-three{
   height: 100%;
-  background-image: url('images/marketing.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
 }
 .text-services{
   text-align: center;
@@ -463,22 +439,22 @@ button:focus {
     height: 70px;
   }
   .about-two{
-    background-image: url('images/social-mobile.png');
+    height: 70px;
   }
   .about-three{
-    background-image: url('images/dynamic-mobile.png');
+    height: 70px;
   }
   .text-services{
     font-size: 1.5rem;
   }
   .service-one{
-    background-image: url('images/design-mobile.png');
+
   }
   .service-two{
-    background-image: url('images/development-mobile.png');
+
   }
   .service-three{
-    background-image: url('images/marketing-mobile.png');
+
   }
   .slider-team{
     padding-left: 43%;
