@@ -39,7 +39,7 @@ button:focus {
   box-shadow: none!important;
 }
 .navbar-brand{
-  padding-left: 7%;
+  padding-left: 10%;
   padding-top: 2%;
   z-index: 9999;
   width: 40%;
@@ -88,7 +88,7 @@ button:focus {
   line-height: 1.4;
 }
 .get-button{
-  margin-top: 30%;
+  margin-top: 15%;
 }
 .get-btn{
   padding: 2% 9%;
@@ -104,14 +104,14 @@ button:focus {
 }
 .arrow_next{
   position: absolute;
-  bottom: 10%;
-  left: 16%;
+  bottom: 13%;
+  left: 17%;
   z-index: 99;
 }
 .arrow_prev{
   position: absolute;
-  bottom: 10%;
-  left: 8%;
+  bottom: 13%;
+  left: 10%;
   z-index: 99;
 }
 .slick-next, .slick-prev{
@@ -147,7 +147,7 @@ button:focus {
 }
 .slider-team{
   height: 100vh;
-  padding-left: 4%;
+  padding-left: 5%;
   padding-right: 75%;
 }
 .main-team{
@@ -214,6 +214,7 @@ button:focus {
   background-size: cover;
   height: 100vh;
   padding-top: 10%;
+  padding-left: 4%;
 }
 .footer-links{
   margin-right: 0!important;
@@ -267,7 +268,7 @@ button:focus {
     font-size: 2rem;
   }
   .slider-team{
-    padding-right: 60%;
+    padding-right: 64%;
   }
   .main-team{
     height: 410px;
@@ -324,8 +325,8 @@ button:focus {
   #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
     display: block;
     position: absolute;
-    height: 4px;
-    width: 100%;
+    height: 2px;
+    width: 80%;
     background: #4D4B4B;
     border-radius: 9px;
     opacity: 1;
@@ -341,7 +342,7 @@ button:focus {
   }
 
   #nav-icon4 span:nth-child(1) {
-    top: 8px;
+    top: 10px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -355,7 +356,7 @@ button:focus {
     transform-origin: left center;
   }
   #nav-icon4 span:nth-child(3) {
-    top: 28px;
+    top: 26px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -378,13 +379,15 @@ button:focus {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 32px;
+    top: 27px;
     left: 8px;
   }
   .navbar-toggler{
     padding: .25rem .75rem;
     background-color: transparent;
     border: 1px solid transparent;
+    padding-right: 0;
+    border-right-width: 0;
   }
   .navbar-brand{
     padding-left: 5%;
@@ -442,7 +445,7 @@ button:focus {
     width: 175px;
   }
   .slider-team{
-    padding-left: 43%;
+    padding-left: 40%;
     padding-right: 4%;
     padding-bottom: 55%;
   }
@@ -458,17 +461,17 @@ button:focus {
   }
   .rounded-img{
     width: 105px;
-    height: 120px;
+    height: 140px;
   }
   .arrow_prev{
-    right: 32%;
-    bottom: 38%;
+    right: 37%;
+    bottom: 40%;
     left: auto;
     width: 30px;
   }
   .arrow_next{
     right: 15%;
-    bottom: 38%;
+    bottom: 40%;
     left:auto;
     width: 30px;
   }
