@@ -88,7 +88,7 @@ button:focus {
   line-height: 1.4;
 }
 .get-button{
-  margin-top: 15%;
+  margin-top: 8%;
 }
 .get-btn{
   padding: 2% 9%;
@@ -104,13 +104,13 @@ button:focus {
 }
 .arrow_next{
   position: absolute;
-  bottom: 13%;
+  bottom: 15%;
   left: 17%;
   z-index: 99;
 }
 .arrow_prev{
   position: absolute;
-  bottom: 13%;
+  bottom: 15%;
   left: 10%;
   z-index: 99;
 }
@@ -445,12 +445,14 @@ button:focus {
     width: 175px;
   }
   .slider-team{
-    padding-left: 40%;
+    padding-left: 45%;
     padding-right: 4%;
     padding-bottom: 55%;
   }
   .main-team{
     background-image: url('images/team-mobile.png');
+    height: -webkit-fill-available;
+    margin-top: -3%;
   }
   .card-title{
     font-size: 1.5rem;
@@ -460,20 +462,21 @@ button:focus {
     font-size: 1.2rem;
   }
   .rounded-img{
-    width: 105px;
-    height: 140px;
+    width: 100px;
+    height: 120px;
+    margin-top: -20%;
   }
   .arrow_prev{
-    right: 37%;
-    bottom: 40%;
+    right: 35%;
+    bottom: 45%;
     left: auto;
-    width: 30px;
+    width: 25px;
   }
   .arrow_next{
     right: 15%;
-    bottom: 40%;
+    bottom: 45%;
     left:auto;
-    width: 30px;
+    width: 25px;
   }
   .form-submit{
     margin-left: 68%;
