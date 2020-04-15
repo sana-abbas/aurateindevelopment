@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="digital social impact agency - web presence for everyone at fair prices">
+    <title>Auratein Development</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:400,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css"/>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        $('#ourStory, #ourValues, .nav-logo, #home').click(function(){
+           $('.navbar-collapse').collapse('hide');
+           $('#nav-icon4').toggleClass('open');
+        });
+
+        $('#nav-icon4').click(function(){
+      		$(this).toggleClass('open');
+      	});
+      })
+
+    </script>
+  </head>
+  <body>
+    <div class="story-background container-fluid">
+
+      <header>
+        <nav class="navbar navbar-light bg-light fixed-top">
+          <a class="navbar-brand story-brand" href="#"><img src="images/logo.png" alt='logo' class="nav-logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-story" aria-controls="menu-story" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="nav-icon4">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-story">
+            <ul class="navbar-nav nav-story ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" id="home">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" id="ourStory">our story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)" id="ourValues">our values</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="our-story">
+          <div class="main-story d-flex align-items-center justify-content-start">
+            <img src="images/ourStory.png" alt="" class="ourstory-img">
+          </div>
+        </section>
+      </main>
+
+    </div>
+
+  </body>
+</html>
