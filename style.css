@@ -23,6 +23,7 @@ body{
 .row{
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 .navbar{
   height: 70px;
@@ -338,12 +339,28 @@ button:focus {
   left: 0;
   width: 100%;
 }
-.main-story{
+.main-story, .main-values, .main-thankyou{
   height: 100vh;
 }
 .ourstory-img{
   width: 200px;
   margin-left: 25%;
+}
+.story-img{
+  width: 200px;
+  padding-bottom: 5%;
+}
+.story-text, .values-text, .thankyou-text{
+  font-size: 1.25rem;
+  text-align: center;
+  padding-left: 15%;
+}
+.thankyou-text{
+  font-size: 1.7rem;
+}
+.value-img{
+  height: 90px;
+  padding-bottom: 5%;
 }
 
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
@@ -407,6 +424,19 @@ button:focus {
   }
   #sent{
     width: 250px;
+  }
+  .ourstory-img , .story-img{
+    width: 150px;
+    padding-bottom: 5%;
+  }
+  .story-text, .values-text{
+    font-size: 1rem;
+  }
+  .value-img{
+    height: 70px;
+  }
+  .thankyou-text{
+    font-size: 1.4rem;
   }
 }
 
