@@ -9,9 +9,10 @@ body{
   color: #4D4B4B;
 }
 .fixed-background{
-  background: url('images/background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
+  background-image: url('images/background.png');
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -84,7 +85,7 @@ button:focus {
   position: absolute;
   height: 2px;
   width: 80%;
-  background: #4D4B4B;
+  background-color: #4D4B4B;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -230,6 +231,7 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  -webkit-background-size: contain;
 }
 .team-slide{
   text-align: center;
@@ -253,6 +255,7 @@ button:focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 80%;
+  -webkit-background-size: 100% 80%;
 }
 .form{
   padding: 5%;
@@ -285,6 +288,7 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
   height: 100vh;
   padding-top: 10%;
   padding-left: 4%;
@@ -316,6 +320,7 @@ button:focus {
   background: url('images/story-background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -332,6 +337,7 @@ button:focus {
   background-image: url('images/story-menu.png');
   background-position: center;
   background-size: cover;
+  -webkit-background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   z-index: 9997;
@@ -339,7 +345,7 @@ button:focus {
   left: 0;
   width: 100%;
 }
-.main-story, .main-values, .main-thankyou{
+.main-story, .main-values, .main-thankyou, .main-story-img{
   height: 100vh;
 }
 .ourstory-img{
@@ -361,6 +367,9 @@ button:focus {
 .value-img{
   height: 90px;
   padding-bottom: 5%;
+}
+.justify-text{
+  text-align: justify;
 }
 
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
@@ -455,10 +464,11 @@ button:focus {
     padding-top: 5%;
     text-align: right;
   }
-  #menu{
-    background-image: url('images/story-menu.png');
+  #menu-story{
+    background-image: url('images/menu.png');
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 9997;
@@ -481,6 +491,7 @@ button:focus {
     background-image: url('images/menu.png');
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 9997;
@@ -488,8 +499,33 @@ button:focus {
     left: 0;
     width: 100%;
   }
+  .nav-story{
+    padding-top: 15%;
+  }
   .fixed-background{
     background-image: url('images/background-mobile.jpg');
+  }
+  .story-background{
+    background-image: url('images/storymobile-background.jpg');
+  }
+  .main-story-img{
+    background-image: url('images/handsketch-mobile.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    -webkit-background-size: contain;
+  }
+  .ourstory-img{
+    padding-bottom: 50%;
+  }
+  .story-text, .values-text{
+    font-size: 0.8rem;
+    padding-left: 15px;
+  }
+  .thankyou-text {
+    font-size: 0.9rem;
+    padding-left: 30%;
+    padding-bottom: 50%;
   }
   .slider-home{
     padding-left: 35%;
