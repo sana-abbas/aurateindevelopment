@@ -33,10 +33,14 @@ button:focus {
 .bg-light{
   background-color: rgb(179, 210, 212)!important;
   box-shadow: 0 0 5px 10px rgb(179, 210, 212);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 .bg-light.scrolled{
   background-color: transparent!important;
   box-shadow: none!important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 .navbar-brand{
   padding-left: 10%;
@@ -213,7 +217,7 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 8%;
   padding-left: 4%;
 }
 .footer-links{
@@ -223,24 +227,15 @@ button:focus {
   padding-left: 10%;
 }
 .footer-img{
-  width: 85px;
-  height: 85px;
-}
-.face-div{
-  padding-bottom: 4%;
-}
-#sent{
-  display: none;
-  font-size: 2em;
-  width: 300px;
-  text-align: center;
+  width: 80px;
+  height: 80px;
 }
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
 
 @media only screen and (max-width : 1024px){
   .navbar-nav .nav-link{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .nav-logo{
     width: 175px;
