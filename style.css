@@ -230,6 +230,10 @@ button:focus {
   width: 80px;
   height: 80px;
 }
+.success-background{
+  height: 100vh;
+  background-color: #ADD5D7;
+}
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
 
