@@ -303,16 +303,6 @@ button:focus {
   width: 85px;
   height: 85px;
 }
-.face-div{
-  padding-bottom: 4%;
-}
-#sent{
-  display: none;
-  font-size: 2em;
-  width: 300px;
-  text-align: center;
-}
-
 /*------------------------ Story Page -----------------------------*/
 
 
@@ -355,6 +345,9 @@ button:focus {
 .story-img{
   width: 200px;
   padding-bottom: 5%;
+}
+.collab, .values-german{
+  width: 300px;
 }
 .story-text, .values-text, .thankyou-text{
   font-size: 1.25rem;
@@ -431,12 +424,15 @@ button:focus {
     width: 70px;
     height: 70px;
   }
-  #sent{
-    width: 250px;
-  }
   .ourstory-img , .story-img{
     width: 150px;
     padding-bottom: 5%;
+  }
+  .collab{
+    width: 200px;
+  }
+  .values-german{
+    width: 175px;
   }
   .story-text, .values-text{
     font-size: 1rem;

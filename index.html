@@ -23,7 +23,7 @@
 
         $(document).scroll(function(){
           var nav = $(".bg-light");
-          var fixed = $("#fixed").outerHeight(true);
+          var fixed = $("#fixed").outerHeight(true)-20;
           nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
         });
 
@@ -310,9 +310,8 @@
           <div class="main-form d-flex align-items-center justify-content-center">
             <div class="form align-items-center justify-content-center">
               <h1 class="form-heading">contact us</h1>
-              <span id="sent">thank you for contacting us. we will get back to you soon</span>
 
-              <form method="POST" name="contact" data-netlify="true" id="formValidate">
+              <form method="POST" name="contact" action="success.html" data-netlify="true" id="formValidate">
                 <div class="form-group">
                   <input type="text" id="name" name="name" required placeholder="your name" class="form-control">
                 </div>
