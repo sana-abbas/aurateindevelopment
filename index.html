@@ -23,7 +23,7 @@
 
         $(document).scroll(function(){
           var nav = $(".bg-light");
-          var fixed = $("#fixed").outerHeight(true);
+          var fixed = $("#fixed").outerHeight(true)-20;
           nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
         });
 

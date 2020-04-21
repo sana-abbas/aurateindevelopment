@@ -23,11 +23,11 @@
 
         $(document).scroll(function(){
           var nav = $(".bg-light");
-          var fixed = $("#fixed").outerHeight(true) - 20;
+          var fixed = $("#fixed").outerHeight(true)-20;
           nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
         });
 
-      $('#aboutus, #team, #contact, #services').click(function(){
+      $('.dropdown-item, #aboutus, #team, #contact, #services').click(function(){
          $('.navbar-collapse').collapse('hide');
          $('#nav-icon4').toggleClass('open');
       });
@@ -306,7 +306,7 @@
             <div class="form align-items-center justify-content-center">
               <h1 class="form-heading">kontaktiere uns</h1>
 
-              <form method="POST" name="germanform" data-netlify="true" id="formValidate">
+              <form method="POST" name="germanform" action="germansuccess.html" data-netlify="true" id="formValidate">
                 <div class="form-group">
                   <input type="text" id="name" name="name" required placeholder="dein name" class="form-control">
                 </div>
