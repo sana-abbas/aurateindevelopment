@@ -346,8 +346,11 @@ button:focus {
   width: 200px;
   padding-bottom: 5%;
 }
-.collab, .values-german{
+.story-german{
   width: 300px;
+}
+.values-german, .collab{
+  width: 250px;
 }
 .story-text, .values-text, .thankyou-text{
   font-size: 1.25rem;
@@ -358,6 +361,10 @@ button:focus {
   font-size: 1.7rem;
 }
 .value-img{
+  height: 90px;
+  padding-bottom: 5%;
+}
+.valueg-img{
   height: 90px;
   padding-bottom: 5%;
 }
@@ -431,13 +438,13 @@ button:focus {
   .collab{
     width: 200px;
   }
-  .values-german{
+  .values-german, .story-german{
     width: 175px;
   }
   .story-text, .values-text{
     font-size: 1rem;
   }
-  .value-img{
+  .value-img, .valueg-img{
     height: 70px;
   }
   .thankyou-text{
