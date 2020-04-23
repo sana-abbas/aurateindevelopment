@@ -21,11 +21,11 @@
 
     $(document).ready(function(){
 
-        $(document).scroll(function(){
-          var nav = $(".bg-light");
-          var fixed = $("#fixed").outerHeight(true)-20;
-          nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
-        });
+      $(document).scroll(function(){
+        var nav = $(".bg-light");
+        var fixed = $("#fixed").outerHeight(true)-20;
+        nav.toggleClass('scrolled', $(this).scrollTop() > fixed);
+      });
 
       $('.nav-logo, #aboutus, #team, #contact, #services').click(function(){
          $('.navbar-collapse').collapse('hide');
@@ -106,51 +106,14 @@
         },
       });
 
-      // $('#submit').click(function(){
-      //
-      //   var isvalid = $('#formValidate').valid();
-      //   if (!isvalid) {
-      //     console.log('error in validation');
-      //     return false;
-      //   }else {
-          // var formData = {
-          //   'name' : $('#name').val(),
-          //   'email' : $('#email').val(),
-          //   'service' : $("#option-box").val(),
-          //   'message' : $("#message").val(),
-          // }
-          //
-          // $.ajax({
-          //
-          //   type: "POST",
-          //
-          //   url: "ajax.php",
-          //
-          //   data: {
-          //     formData,
-          //   },
-          //
-          //   success: function(response) {
-          //     console.log(response);
-          //     $('myform').hide();
-          //     $('.form-heading').hide();
-          //     $('#sent').css('display' , 'block');
-          //     $('#sent').show();
-          //   },
-          //   error: function (jqXHR, textStatus, errorThrown) {
-          //     console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-          //   }
-          // });
-      //   }
-      // });
-
-
     });
     </script>
 
   </head>
   <body>
     <div class="fixed-background container-fluid" id="fixed">
+
+<!-- Nav Bar -->
 
       <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -188,6 +151,8 @@
       </header>
 
       <main>
+
+<!-- Home Slider -->
 
         <section class="home">
 
@@ -227,6 +192,8 @@
 
         </section>
 
+<!-- About Us -->
+
         <section class="aboutus" id="about">
 
           <div class="row main-services d-flex align-items-center justify-content-start">
@@ -247,6 +214,8 @@
 
         </section>
 
+<!-- Services -->
+
         <section class="services" id="servicess">
 
           <div class="row main-services d-flex align-items-center justify-content-start">
@@ -266,6 +235,8 @@
           </div>
 
         </section>
+
+<!-- Team -->
 
           <section class="team" id="teams">
 
@@ -305,6 +276,8 @@
 
         </section>
 
+<!-- Contact Form -->
+
         <section class="contact d-flex align-items-center justify-content-start" id="contactus">
 
           <div class="main-form d-flex align-items-center justify-content-center">
@@ -341,6 +314,8 @@
       </main>
 
     </div>
+
+<!-- Footer -->
 
     <footer>
       <div class="footer-bg">
