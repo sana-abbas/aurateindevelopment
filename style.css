@@ -94,6 +94,10 @@ button:focus {
   color: #4D4B4B;
   text-decoration: none;
 }
+.slick-next, .slick-prev{
+  right: 0;
+  display: none!important;
+}
 
 /* About Us */
 
