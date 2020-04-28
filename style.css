@@ -18,6 +18,7 @@ body{
 .row{
   margin-left: 0;
   margin-right: 0;
+  width: 100%;
 }
 
 /* Nav Bar */
@@ -55,13 +56,94 @@ button:focus {
   width: 200px;
 }
 .navbar-nav{
-  margin-right: 4%;
+  margin-right: 1%;
 }
 .navbar-nav .nav-link {
   padding-right: 0.9rem;
   padding-left: .9rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+#nav-icon4 {
+  width: 35px;
+  height: 40px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: #4D4B4B;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon4 span:nth-child(1) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+  top: 26px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 7px;
+  left: 8px;
+}
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 27px;
+  left: 8px;
+}
+.navbar-toggler{
+  padding: .25rem .75rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding-right: 0;
+  padding-bottom: 20px;
+  border-right-width: 0;
 }
 
 /* Home Slider */
@@ -244,32 +326,104 @@ button:focus {
   background-color: #ADD5D7;
 }
 .success-text{
-  width: 25%;
+  width: 40%;
   background-color: rgba(249, 241, 224, 0.9);
   box-shadow: -25px -25px 80px rgba(255, 255, 255, 0.3), 12px 12px 90px rgba(0, 0, 0, 0.28), inset -3px -3px 90px rgba(56, 56, 56, 0.18), inset 3px 3px 90px rgba(255, 255, 255, 0.18);
   border-radius: 15px;
 }
 .center-text{
   text-align: center;
-  padding: 5% 2%;
+  padding: 12% 0 6%;
 }
 .success-thank{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 .success-message{
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .back-text{
   color: #FD0257;
   padding-top: 5%;
   padding-left: 8px;
   padding-bottom: 1%;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .back-text:hover{
   color: #FD0257;
 }
+.back-img{
+  width: 15px;
+}
+
+/* Story Page */
+
+.story-background{
+  background: url('images/story-background.png'),linear-gradient(15deg, rgba(255,150,145,1) 0%, rgba(184,212,213,1) 73%);
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.story-brand{
+  padding-left: 5%;
+  padding-top: 0!important;
+}
+.nav-story{
+  height: 100vh;
+  padding-top: 5%;
+  text-align: right;
+}
+#menu-story{
+  background-image: url('images/story-menu.png');
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.main-story, .main-values, .main-thankyou, .main-story-img{
+  height: 100vh;
+}
+.ourstory-img{
+  width: 200px;
+  margin-left: 25%;
+}
+.story-img{
+  width: 200px;
+  padding-bottom: 5%;
+}
+.story-german{
+  width: 300px;
+}
+.values-german, .collab{
+  width: 250px;
+}
+.story-text, .values-text, .thankyou-text{
+  font-size: 1.25rem;
+  text-align: center;
+  padding-left: 15%;
+}
+.thankyou-text{
+  font-size: 1.7rem;
+}
+.value-img{
+  height: 90px;
+  padding-bottom: 5%;
+}
+.valueg-img{
+  height: 90px;
+  padding-bottom: 5%;
+}
+.justify-text{
+  text-align: justify;
+}
+
 
 /*------------------------ Small Laptop and Tablets Breakpoint -----------------------------*/
 
@@ -349,6 +503,31 @@ button:focus {
   .footer-img{
     width: 70px;
     height: 70px;
+  }
+
+  /* Story Page */
+
+  .ourstory-img , .story-img{
+    width: 150px;
+    padding-bottom: 5%;
+  }
+  .collab{
+    width: 200px;
+  }
+  .values-german{
+    width: 175px;
+  }
+  .story-german{
+    width: 200px;
+  }
+  .story-text, .values-text{
+    font-size: 1rem;
+  }
+  .value-img, .valueg-img{
+    height: 70px;
+  }
+  .thankyou-text{
+    font-size: 1.4rem;
   }
 }
 
@@ -476,6 +655,9 @@ button:focus {
     left: 0;
     width: 100%;
   }
+  .navbar-nav{
+    margin-right: 4%;
+  }
 
   /* Home Slider */
 
@@ -584,18 +766,61 @@ button:focus {
   /* Form Success Page */
 
   .success-text{
-    width: 80%;
+    width: 90%;
   }
   .success-thank{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
   .success-message{
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .back-text{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .nav-success{
     padding-left: 1%;
+  }
+
+  /* Story Page */
+
+  .nav-story{
+    padding-top: 15%;
+  }
+  #menu-story{
+    background-image: url('images/menu.png');
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .story-background{
+    background-image: url('images/storymobile-background.jpg');
+  }
+  .main-story-img{
+    background-image: url('images/handsketch-mobile.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    -webkit-background-size: contain;
+  }
+  .ourstory-img{
+    padding-bottom: 50%;
+  }
+  .story-german{
+    width: 175px;
+  }
+  .story-text, .values-text{
+    font-size: 0.8rem;
+    padding-left: 15px;
+  }
+  .thankyou-text {
+    font-size: 0.9rem;
+    padding-left: 30%;
+    padding-bottom: 50%;
   }
 }
