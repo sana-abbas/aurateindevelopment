@@ -438,8 +438,11 @@ button:focus {
   .collab{
     width: 200px;
   }
-  .values-german, .story-german{
+  .values-german{
     width: 175px;
+  }
+  .story-german{
+    width: 200px;
   }
   .story-text, .values-text{
     font-size: 1rem;
@@ -624,5 +627,8 @@ button:focus {
   }
   .facebook{
     margin-left: 80px;
+  }
+  .story-german{
+    width: 175px;
   }
 }
