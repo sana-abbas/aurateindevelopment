@@ -106,51 +106,14 @@
         },
       });
 
-      // $('#submit').click(function(){
-      //
-      //   var isvalid = $('#formValidate').valid();
-      //   if (!isvalid) {
-      //     console.log('error in validation');
-      //     return false;
-      //   }else {
-          // var formData = {
-          //   'name' : $('#name').val(),
-          //   'email' : $('#email').val(),
-          //   'service' : $("#option-box").val(),
-          //   'message' : $("#message").val(),
-          // }
-          //
-          // $.ajax({
-          //
-          //   type: "POST",
-          //
-          //   url: "ajax.php",
-          //
-          //   data: {
-          //     formData,
-          //   },
-          //
-          //   success: function(response) {
-          //     console.log(response);
-          //     $('myform').hide();
-          //     $('.form-heading').hide();
-          //     $('#sent').css('display' , 'block');
-          //     $('#sent').show();
-          //   },
-          //   error: function (jqXHR, textStatus, errorThrown) {
-          //     console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-          //   }
-          // });
-      //   }
-      // });
-
-
     });
     </script>
 
   </head>
   <body>
     <div class="fixed-background container-fluid" id="fixed">
+
+<!-- Nav Bar -->
 
       <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -177,7 +140,7 @@
                 <a class="nav-link" href="javascript:void(0)" id="contact">contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="story.html" id="contact">our story</a>
+                <a class="nav-link" href="story.html" id="">our story</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="german.html">DE</a>
@@ -188,6 +151,8 @@
       </header>
 
       <main>
+
+<!-- Home Slider -->
 
         <section class="home">
 
@@ -227,7 +192,9 @@
 
         </section>
 
-        <section class="aboutus">
+<!-- About Us -->
+
+        <section class="aboutus" id="about">
 
           <div class="row main-services d-flex align-items-center justify-content-start">
             <div class="col-lg-4 col-md-6 col-sm-3 align-items-center d-flex justify-content-center">
@@ -247,7 +214,9 @@
 
         </section>
 
-        <section class="services">
+<!-- Services -->
+
+        <section class="services" id="servicess">
 
           <div class="row main-services d-flex align-items-center justify-content-start">
             <div class="col-lg-4 col-md-6 service-one align-items-center d-flex justify-content-center">
@@ -267,7 +236,9 @@
 
         </section>
 
-          <section class="team">
+<!-- Team -->
+
+          <section class="team" id="teams">
 
             <div class="slider-team d-flex align-items-center justify-content-start">
 
@@ -305,7 +276,9 @@
 
         </section>
 
-        <section class="contact d-flex align-items-center justify-content-start">
+<!-- Contact Form -->
+
+        <section class="contact d-flex align-items-center justify-content-start" id="contactus">
 
           <div class="main-form d-flex align-items-center justify-content-center">
             <div class="form align-items-center justify-content-center">
@@ -341,6 +314,8 @@
       </main>
 
     </div>
+
+<!-- Footer -->
 
     <footer>
       <div class="footer-bg">
