@@ -158,7 +158,7 @@ button:focus {
   text-align: center;
 }
 .text-slider{
-  padding-top: 22%;
+  padding-top: 50%;
   line-height: 1.4;
 }
 .get-button{
@@ -667,6 +667,7 @@ button:focus {
   }
   .text-slider{
     font-size: 1.5rem;
+    padding-top: 35%;
   }
   .get-btn{
     font-size: 16px;
